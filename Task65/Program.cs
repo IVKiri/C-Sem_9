@@ -7,7 +7,7 @@ void Numbers(int num1, int num2)
 {
     if (num2 > num1)
     {
-        if (num2 == num1 - 1)
+        if (num2 == num1)
         {
             return;
         }
@@ -16,11 +16,11 @@ void Numbers(int num1, int num2)
     }
     else if (num2 < num1)
     {
-        if (num2 == num1 - 1)
+        if (num2 == num1)
         {
             return;
         }
-        Numbers(num2, num1 - 1);
+        Numbers(num1 - 1, num2);
         Console.Write($"{num1} ");
     }
     else
